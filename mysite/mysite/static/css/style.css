@@ -1,0 +1,53 @@
+body{
+
+    background-color: skyblue;
+}
+
+/* Container for a subtle shadow and rounded corners */
+.table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px  #64748b;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #00806f;
+  text-align: left;
+}
+
+/* Header styling */
+thead {
+  background-color: yellow;
+  color: #64748b;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+th, td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+/* Text colors */
+td {
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+/* Bold the ID column or First Name if desired */
+td:first-child {
+  font-weight: 600;
+  color: #94a3b8;
+}

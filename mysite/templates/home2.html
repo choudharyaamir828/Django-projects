@@ -1,0 +1,39 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+    <h1 class=" back font-medium  p-10">Employee Information</h1>
+<div class="table-container">
+<table>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Full Name</th>
+        <th>Designation</th>
+        <th>Phone Number</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for i in employees %}
+    <tr>
+        <td>{{ i.id }}</td>
+        <td>{{ i.first_name }} {{ i.last_name }}</td>
+        <td>{{ i.designation }}</td>
+        <td>{{ i.phone_number }}</td>
+    </tr>
+    
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+
+
+    
+</body>
+</html>
